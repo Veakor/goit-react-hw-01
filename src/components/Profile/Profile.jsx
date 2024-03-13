@@ -17,17 +17,17 @@ const Profile = ({ name, tag, location, image, stats }) => {
         <p className={styles.tag}>@{tag}</p>
         <p className={styles.location}>{location}</p>
       </div>
-      <ul>
+      <ul className={styles.column}>
         <li>
-          <span>Followers</span>
+          <span className={styles.bold}>Followers</span>
           <span>{followers}</span>
         </li>
         <li>
-          <span>Views</span>
+          <span  className={styles.bold}>Views</span>
           <span>{views}</span>
         </li>
         <li>
-          <span>Likes</span>
+          <span className={styles.bold}>Likes</span>
           <span>{likes}</span>
         </li>
       </ul>
