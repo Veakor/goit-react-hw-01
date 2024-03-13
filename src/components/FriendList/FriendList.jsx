@@ -1,5 +1,7 @@
+/* eslint-disable react/jsx-no-undef */
 
 
+// eslint-disable-next-line no-unused-vars
 import styles from './FriendList.css';
 
 const FriendList = ({ friends }) => {
