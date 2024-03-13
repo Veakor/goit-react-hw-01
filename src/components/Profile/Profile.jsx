@@ -2,8 +2,10 @@
 
 import styles from './Profile.module.css'; 
 
+
 // eslint-disable-next-line react/prop-types
 const Profile = ({ name, tag, location, image, stats }) => {
+  
   // eslint-disable-next-line react/prop-types
   const { followers, views, likes } = stats; 
 
@@ -11,9 +13,9 @@ const Profile = ({ name, tag, location, image, stats }) => {
     <div className={styles.profile}>
       <div>
         <img src={image} alt="User avatar" />
-        <p>{name}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
+        <p className={styles.username}>{name}</p>
+        <p className={styles.tag}>@{tag}</p>
+        <p className={styles.location}>{location}</p>
       </div>
       <ul>
         <li>
