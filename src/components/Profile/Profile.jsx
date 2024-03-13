@@ -1,5 +1,5 @@
 
-import React from 'react';
+
 import styles from './Profile/Profile.module.css'; 
 
 // eslint-disable-next-line react/prop-types
