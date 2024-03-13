@@ -1,17 +1,11 @@
 
 import Profile from './components/Profile/Profile'; 
 import userData from './userData.json'; 
-// eslint-disable-next-line no-unused-vars
-import FriendList from './components/FriendList/FriendList';
-// eslint-disable-next-line no-unused-vars
-import friends from './friends.json';
-
-
-
+import friends from "./friends.json";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -19,8 +13,10 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
-    </div>
+      <FriendList friends={friends} />
+    </>
   );
 };
+
 
 export default App;
