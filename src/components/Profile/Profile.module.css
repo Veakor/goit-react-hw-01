@@ -45,7 +45,7 @@
   }
   
  .column {
-    flex: 3;
+    flex: 1;
     padding: 10px;
     list-style-type: none;
     display: flex;
