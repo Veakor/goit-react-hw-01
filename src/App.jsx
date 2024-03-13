@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-undef */
 
 import Profile from './components/Profile/Profile'; 
 import userData from './userData.json'; 
