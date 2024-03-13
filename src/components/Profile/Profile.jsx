@@ -1,6 +1,6 @@
 
 
-import styles from './Profile/Profile.module.css'; 
+import styles from './Profile.module.css'; 
 
 // eslint-disable-next-line react/prop-types
 const Profile = ({ name, tag, location, image, stats }) => {
