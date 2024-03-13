@@ -1,6 +1,7 @@
-/* eslint-disable react/jsx-no-undef */
 
-import Profile from './components/Profile/Profile'; 
+export default App;
+import Profile from './components/Profile/Profile';
+import FriendList from './components/FriendList/FriendList'; 
 import userData from './userData.json'; 
 import friends from "./friends.json";
 
@@ -19,5 +20,3 @@ const App = () => {
   );
 };
 
-
-export default App;
