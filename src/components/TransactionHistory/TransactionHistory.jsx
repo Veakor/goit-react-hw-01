@@ -5,19 +5,19 @@ import styles from './TransactionHistory.module.css';
 
 const TransactionHistory = ({ items }) => {
     return (
-      <table className={styles.transactionHistory}> {/* Додаємо клас стилів */}
+      <table className={styles.transactionHistory}>
         <thead>
           <tr>
-            <th>Type</th>
+            <th className={styles.highlight}>Type</th>
             <th>Amount</th>
-            <th>Currency</th>
+            <th className={styles.highlight}>Currency</th>
           </tr>
         </thead>
   
         <tbody>
-          {items.map(({ id, type, amount, currency }) => ( {/* Мапимо масив об'єктів */}
+          {items.map(({ id, type, amount, currency }) => (
             <tr key={id}>
-              <td>{type}</td>
+              <td>{type.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}</td>
               <td>{amount}</td>
               <td>{currency}</td>
             </tr>
@@ -26,6 +26,4 @@ const TransactionHistory = ({ items }) => {
       </table>
     );
   };
-  
-  
 export default TransactionHistory;
