@@ -3,3 +3,25 @@
   line-height: 1.5;
   font-weight: 400;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6,
+p
+ {
+  margin: 0;
+  padding: 0;
+}

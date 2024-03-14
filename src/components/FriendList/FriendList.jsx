@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/jsx-no-undef */
+
 
 
 import FriendListItem from '../FriendListItem/FriendListItem';
@@ -8,9 +7,9 @@ import styles from './FriendList.module.css';
 const FriendList = ({ friends }) => {
   return (
     
-    <ul>
+    <ul className ={styles.ulList}>
       {friends.map(({ id, ...props }) => (
-        <li key={id}>
+        <li className ={styles.liStyle} key={id}>
           <FriendListItem {...props} />
         </li>
       ))}
