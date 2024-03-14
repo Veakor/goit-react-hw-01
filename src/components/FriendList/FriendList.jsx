@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-no-undef */
 
 
-// eslint-disable-next-line no-unused-vars
-import styles from './FriendList.css';
+import FriendListItem from '../FriendListItem/FriendListItem';
+import styles from './FriendList.module.css';
 
 const FriendList = ({ friends }) => {
   return (
