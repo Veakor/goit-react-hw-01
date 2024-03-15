@@ -15,9 +15,9 @@ const TransactionHistory = ({ items }) => {
         <tbody>
           {items.map(({ id, type, amount, currency }) => (
             <tr key={id}>
-              <td>{type.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}</td>
-              <td>{amount}</td>
-              <td>{currency}</td>
+              <td className = {styles.word}>{type}</td>
+              <td className = {styles.word}>{amount}</td>
+              <td className = {styles.word}>{currency}</td>
             </tr>
           ))}
         </tbody>

@@ -1,8 +1,7 @@
 
-// eslint-disable-next-line no-unused-vars
+
 import styles from './FriendListItem.module.css'; 
 
-// eslint-disable-next-line react/prop-types
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <div className={styles.useradd}>

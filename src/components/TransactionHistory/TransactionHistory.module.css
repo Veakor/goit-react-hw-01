@@ -38,3 +38,6 @@
   .transactionHistory th, .transactionHistory td  {
     text-align: center;
   }
+  .word{
+    text-transform: capitalize;
+  }
